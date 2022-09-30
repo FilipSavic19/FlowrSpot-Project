@@ -7,9 +7,13 @@ const HomePage = () => {
   return (
     <div className="hero-section">
       <div className="hero-image">
-        <img id="img" src={Hero} />
+        <img className="hero-image-background" src={Hero} />
+        <div className="hero-image-content">
+          <h1>Discover flowers around you</h1>
+          <p className="explore">Explore between more than 8.427 sightings</p>
+          <input placeholder="Looking for something specific?" />
+        </div>
       </div>
-      <h1>Discover flowers around you</h1>
     </div>
   );
 };

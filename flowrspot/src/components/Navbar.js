@@ -10,12 +10,14 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-left">
-        <div className="logo">
-          <img src={Vector} />
-          <img src={Vector1} />
-          <img src={Vector2} />
-        </div>
-        <h2>FlowrSpot</h2>
+        <Link className="navbar-item-home" to="/">
+          <div className="logo">
+            <img src={Vector} />
+            <img src={Vector1} />
+            <img src={Vector2} />
+          </div>
+          <h2>FlowrSpot</h2>
+        </Link>
       </div>
       <div className="navbar-right">
         <Link className="navbar-item" to="/flowerlist">
