@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import FavoriteFlowers from "./Pages/FavoriteFlowers";
 import FlowerDetail from "./Pages/FlowerDetail";
@@ -13,11 +13,22 @@ import SightingDetail from "./Pages/SightingDetail";
 import SightingList from "./Pages/SightingList";
 import User from "./Pages/User";
 import Navbar from "./components/Navbar";
+import Modal from "./components/Modal";
 
 const App = () => {
+  const [open, setOpen] = useState(false);
+  const setOpenModal = (boolean) => {
+    setOpen(boolean);
+  };
   return (
     <Router>
-      <Navbar />
+      <Navbar func={setOpenModal} />
+      {open && (
+        <Modal>
+          <HomeCreateAccount func={setOpenModal} />
+        </Modal>
+      )}
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/homelogin" element={<HomeLogIn />} />

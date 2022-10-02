@@ -6,7 +6,7 @@ import Vector from "../Images/Vector.png";
 import Vector1 from "../Images/Vector1.png";
 import Vector2 from "../Images/Vector2.png";
 
-const Navbar = () => {
+const Navbar = ({ func }) => {
   return (
     <div className="navbar">
       <div className="navbar-left">
@@ -32,8 +32,13 @@ const Navbar = () => {
         <Link className="navbar-item-login" to="/homelogin">
           Login
         </Link>
-
-        <button>New Account</button>
+        <button
+          onClick={() => {
+            func(true);
+          }}
+        >
+          New Account
+        </button>
       </div>
     </div>
   );
