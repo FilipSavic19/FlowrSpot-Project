@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Modal.css";
 
-const Modal = ({ children }) => {
+const Modal = ({ children, close }) => {
   return (
     <div>
       <div className="background"></div>

@@ -12,8 +12,14 @@ const HomePage = () => {
         <div className="hero-image-content">
           <h1>Discover flowers around you</h1>
           <p className="explore">Explore between more than 8.427 sightings</p>
-          <input placeholder="Looking for something specific?" />
-          <img className="hero-image-search-image" src={SearchIcon} />
+          <div className="form-input">
+            <input placeholder="Looking for something specific?" />
+            <img
+              className="hero-image-search-image"
+              src={SearchIcon}
+              width="30px"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -17,22 +17,29 @@ import Modal from "./components/Modal";
 
 const App = () => {
   const [open, setOpen] = useState(false);
+  const [openLogin, setOpenLogin] = useState(false);
   const setOpenModal = (boolean) => {
     setOpen(boolean);
   };
+  const setOpenModalLogin = (boolean) => {
+    setOpenLogin(boolean);
+  };
   return (
     <Router>
-      <Navbar func={setOpenModal} />
+      <Navbar funct={setOpenModalLogin} func={setOpenModal} />
       {open && (
         <Modal>
           <HomeCreateAccount func={setOpenModal} />
         </Modal>
       )}
+      {openLogin && (
+        <Modal>
+          <HomeLogIn funct={setOpenModalLogin} />
+        </Modal>
+      )}
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/homelogin" element={<HomeLogIn />} />
-        <Route path="/homecreateaccount" element={<HomeCreateAccount />} />
         <Route path="/flowerlist" element={<FlowerList />} />
         <Route path="/flowerdetail" element={<FlowerDetail />} />
         <Route path="/favoriteflowers" element={<FavoriteFlowers />} />

@@ -21,7 +21,7 @@ const HomeCreateAccount = ({ func }) => {
         }}
         className="close-form"
       >
-        I don't want to register
+        I dont want to register
       </div>
     </div>
   );
