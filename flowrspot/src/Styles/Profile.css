@@ -1,0 +1,90 @@
+.profile {
+  height: 610px;
+  width: 590px;
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.close-profile {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  font-family: "Ubuntu";
+  color: #949ea0;
+  font-size: 25px;
+}
+
+.profile-pic-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70%;
+  font-family: "Ubuntu";
+}
+
+.profile-name h3 {
+  font-family: "Ubuntu";
+  font-size: 25px;
+  color: #334144;
+  font-weight: 400;
+}
+
+.profile-name p {
+  font-family: "Ubuntu";
+  font-size: 13px;
+  color: #949ea0;
+}
+
+.profile-image {
+  padding: 15px;
+}
+
+.profile-info {
+  width: 70%;
+  padding: 15px;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Ubuntu";
+}
+
+.profile-info p {
+  color: #949ea0;
+  padding: 10px 0;
+  font-size: 10px;
+}
+
+.profile-info h3 {
+  font-family: "Ubuntu";
+  color: #334144;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.profile-button {
+  width: 25%;
+  height: 50px;
+  margin: 15px;
+}
+
+.profile-button > button {
+  width: 100%;
+  height: 100%;
+  background-color: #eaa79e;
+  color: white;
+  border-radius: 0;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+  border: none;
+}

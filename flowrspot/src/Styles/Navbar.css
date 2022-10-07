@@ -41,7 +41,7 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-h2 {
+.navbar-item-home h2 {
   margin-left: 10px;
   text-decoration: none;
   color: #eaa79e;
@@ -60,7 +60,7 @@ h2 {
   margin: 10px;
 }
 
-img {
+.logo img {
   position: absolute;
   display: flex;
   align-items: center;

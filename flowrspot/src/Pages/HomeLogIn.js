@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Login.css";
 
-const HomeLogIn = ({ funct }) => {
+const HomeLogIn = ({ funct, funcLog }) => {
   return (
     <div className="modal-login">
       <h1>Welcome Back</h1>
@@ -10,7 +10,14 @@ const HomeLogIn = ({ funct }) => {
         <input type="password" placeholder="Password" />
       </div>
       <div className="login-button">
-        <button>Login to your Account</button>
+        <button
+          onClick={() => {
+            funcLog(true);
+            funct(false);
+          }}
+        >
+          Login to your Account
+        </button>
       </div>
       <div
         onClick={() => {

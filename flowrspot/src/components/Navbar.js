@@ -5,8 +5,9 @@ import "../Styles/Navbar.css";
 import Vector from "../Images/Vector.png";
 import Vector1 from "../Images/Vector1.png";
 import Vector2 from "../Images/Vector2.png";
+import pfp from "../Images/profile-holder.png";
 
-const Navbar = ({ funct, func }) => {
+const Navbar = ({ funct, func, log, openProfile }) => {
   return (
     <div className="navbar">
       <div className="navbar-left">
@@ -29,22 +30,42 @@ const Navbar = ({ funct, func }) => {
         <Link className="navbar-item" to="/favoriteflowers">
           Favorites
         </Link>
-        <Link
-          onClick={() => {
-            funct(true);
-          }}
-          className="navbar-item-login"
-          to="/"
-        >
-          Login
-        </Link>
-        <button
-          onClick={() => {
-            func(true);
-          }}
-        >
-          New Account
-        </button>
+        {!log && (
+          <>
+            <Link
+              onClick={() => {
+                funct(true);
+              }}
+              className="navbar-item-login"
+              to="/"
+            >
+              Login
+            </Link>
+            <button
+              onClick={() => {
+                func(true);
+              }}
+            >
+              New Account
+            </button>
+          </>
+        )}
+        {log && (
+          <>
+            <Link
+              onClick={() => {
+                funct(true);
+              }}
+              className="navbar-item-login"
+              to="/"
+            >
+              John Doe
+            </Link>
+            <Link to="/">
+              <img onClick={() => openProfile(true)} src={pfp} />
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );

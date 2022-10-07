@@ -18,15 +18,28 @@ import Modal from "./components/Modal";
 const App = () => {
   const [open, setOpen] = useState(false);
   const [openLogin, setOpenLogin] = useState(false);
+  const [openProfile, setIsLogin] = useState(false);
+  const [isLogged, setLogin] = useState(false);
   const setOpenModal = (boolean) => {
     setOpen(boolean);
   };
   const setOpenModalLogin = (boolean) => {
     setOpenLogin(boolean);
   };
+  const setisLogin = (boolean) => {
+    setIsLogin(boolean);
+  };
+  const setLogged = (boolean) => {
+    setLogin(boolean);
+  };
   return (
     <Router>
-      <Navbar funct={setOpenModalLogin} func={setOpenModal} />
+      <Navbar
+        funct={setOpenModalLogin}
+        func={setOpenModal}
+        log={isLogged}
+        openProfile={setIsLogin}
+      />
       {open && (
         <Modal>
           <HomeCreateAccount func={setOpenModal} />
@@ -34,7 +47,12 @@ const App = () => {
       )}
       {openLogin && (
         <Modal>
-          <HomeLogIn funct={setOpenModalLogin} />
+          <HomeLogIn funct={setOpenModalLogin} funcLog={setLogged} />
+        </Modal>
+      )}
+      {openProfile && (
+        <Modal>
+          <Profile funct={setisLogin} funcLog={setLogged} />
         </Modal>
       )}
 
