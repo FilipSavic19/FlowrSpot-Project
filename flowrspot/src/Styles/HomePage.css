@@ -12,11 +12,11 @@
 .hero-image {
   width: 100%;
   height: 700px;
-  position: relative;
 }
 
 .hero-image-background {
   width: 100%;
+  height: 100%;
 }
 
 .hero-image-content {
@@ -66,4 +66,9 @@
 .hero-image-search-image {
   filter: invert(73%) sepia(58%) saturate(523%) hue-rotate(308deg)
     brightness(108%) contrast(83%);
+}
+
+.list-random-flowers {
+  height: 500px;
+  margin-top: 40px;
 }
