@@ -2,8 +2,8 @@
 import React from "react";
 import RandomFlowerList from "../components/RandomFlowerList";
 import Hero from "../Images/pl-hero.png";
-import SearchIcon from "../Images/Vector 3.png";
 import "../Styles/HomePage.css";
+import SearchBar from "../components/SearchBar";
 
 const HomePage = () => {
   return (
@@ -13,14 +13,7 @@ const HomePage = () => {
         <div className="hero-image-content">
           <h1>Discover flowers around you</h1>
           <p className="explore">Explore between more than 8.427 sightings</p>
-          <div className="form-input">
-            <input placeholder="Looking for something specific?" />
-            <img
-              className="hero-image-search-image"
-              src={SearchIcon}
-              width="30px"
-            />
-          </div>
+          <SearchBar />
         </div>
       </div>
       <div className="list-random-flowers">

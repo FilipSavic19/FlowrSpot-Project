@@ -1,11 +1,14 @@
 import React from "react";
 import flowerPhoto from "../Images/pl-image.png";
 import "../Styles/FlowerItem.css";
+import { Link } from "react-router-dom";
 
 const FlowerItem = () => {
   return (
     <div className="flower-card">
-      <img src={flowerPhoto} alt="" />
+      <Link to="/flowerdetail">
+        <img src={flowerPhoto} alt="" />
+      </Link>
       <div className="favorite-mark">
         <i className="fa fa-star"></i>
       </div>

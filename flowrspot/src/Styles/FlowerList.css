@@ -1,0 +1,15 @@
+.flower-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 70px;
+}
+
+.search {
+  width: 600px;
+}
+
+.search input {
+  border: none;
+}

@@ -1,0 +1,55 @@
+.hero-section-flower-detail {
+  height: 350px;
+  width: 100%;
+  position: relative;
+}
+
+.hero-section-flower-detail .hero-img {
+  width: 100%;
+}
+
+.hero-section-content {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 5%;
+  transform: translate(0%, 20%);
+  display: flex;
+  align-items: center;
+}
+
+.flower-name {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.flower-profile {
+  width: 80%;
+  border: 2px solid blue;
+}
+
+.flower-name-right {
+  width: 188px;
+  height: 50px;
+}
+
+.flower-name-right button {
+  width: 100%;
+  height: 100%;
+}
+
+.flower-sighting {
+  width: 10%;
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+}
+
+.flower-sighting p {
+  font-family: "Ubuntu", sans-serif;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 10px;
+  border-radius: 20px;
+  color: white;
+}
