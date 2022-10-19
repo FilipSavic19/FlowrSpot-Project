@@ -1,0 +1,23 @@
+.comments-and-favorites {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.comments-and-favorites .comments,
+.favorites {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  color: #949ea0;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.comments-and-favorites .comments i,
+.favorites i {
+  margin-right: 5%;
+}
