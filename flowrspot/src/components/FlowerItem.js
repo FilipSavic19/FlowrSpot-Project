@@ -1,13 +1,17 @@
 import React from "react";
 import flowerPhoto from "../Images/pl-image.png";
 import "../Styles/FlowerItem.css";
+import { Link } from "react-router-dom";
+import FavoriteStarButton from "./Buttons/FavoriteStarButton";
 
 const FlowerItem = () => {
   return (
     <div className="flower-card">
-      <img src={flowerPhoto} alt="" />
-      <div className="favorite-mark">
-        <i className="fa fa-star"></i>
+      <Link to="/flowerdetail">
+        <img src={flowerPhoto} alt="" />
+      </Link>
+      <div className="favorite-btn">
+        <FavoriteStarButton />
       </div>
       <div className="flower-description">
         <div className="flower-name">

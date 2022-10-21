@@ -1,4 +1,6 @@
-.random-flower-list {
+.random-flower-list,
+.flowers-list,
+.sighting-list {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
