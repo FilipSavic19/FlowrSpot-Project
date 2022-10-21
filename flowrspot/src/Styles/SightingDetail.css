@@ -1,0 +1,25 @@
+.sightingMap {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(
+    180deg,
+    rgba(249, 249, 249, 0.0001) 0%,
+    green 150%
+  );
+  position: relative;
+}
+
+.sightingButtons {
+  display: flex;
+  width: 17%;
+  justify-content: space-between;
+  position: absolute;
+  top: 70%;
+  left: 98%;
+  transform: translate(-95%, -90%);
+}
+
+.sightingDetailCardProfile {
+  display: flex;
+  justify-content: center;
+}
