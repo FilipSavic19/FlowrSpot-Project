@@ -4,7 +4,7 @@
   justify-content: space-between;
 }
 
-.comments-and-favorites .comments,
+.comments-and-favorites .numberOfComments,
 .favorites {
   display: flex;
   width: 50%;
@@ -17,7 +17,7 @@
   line-height: 12px;
 }
 
-.comments-and-favorites .comments i,
+.comments-and-favorites .numberOfComments i,
 .favorites i {
   margin-right: 5%;
 }

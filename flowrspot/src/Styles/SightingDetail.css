@@ -7,19 +7,32 @@
     green 150%
   );
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .sightingButtons {
   display: flex;
-  width: 17%;
-  justify-content: space-between;
+  justify-content: flex-end;
   position: absolute;
-  top: 70%;
-  left: 98%;
-  transform: translate(-95%, -90%);
+  top: 60%;
+  width: 97%;
+}
+
+.view-report-buttons {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
 }
 
 .sightingDetailCardProfile {
+  height: 400px;
   display: flex;
   justify-content: center;
+}
+
+.listOfComments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -1,0 +1,46 @@
+.comment {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 20px 0;
+  border-bottom: 1px solid #e8e9ed;
+  padding: 15px 0;
+}
+
+.commentProfile {
+  display: flex;
+  align-items: center;
+}
+
+.commentNameAndDate {
+  margin-left: 10px;
+}
+
+.commentNameAndDate .commentFlwrName {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #334144;
+}
+
+.commentNameAndDate .commentPostDate {
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #949ea0;
+}
+
+.commentContent {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: justify;
+  color: #949ea0;
+}

@@ -4,6 +4,8 @@ import ViewOnGoogleMaps from "../components/Buttons/ViewOnGoogleMaps";
 import SightingDetailCard from "../components/SightingDetailCard";
 import Map from "../components/Map";
 import "../Styles/SightingDetail.css";
+import CommentsList from "../components/CommentsList";
+import PublishCommentButton from "../components/Buttons/PublishCommentButton";
 
 const SightingDetail = () => {
   return (
@@ -11,12 +13,17 @@ const SightingDetail = () => {
       <div className="sightingMap">
         <Map />
         <div className="sightingButtons">
-          <ViewOnGoogleMaps />
-          <ReportButton />
+          <div className="view-report-buttons">
+            <ViewOnGoogleMaps />
+            <ReportButton />
+          </div>
         </div>
       </div>
       <div className="sightingDetailCardProfile">
         <SightingDetailCard />
+      </div>
+      <div className="listOfComments">
+        <CommentsList />
       </div>
     </div>
   );

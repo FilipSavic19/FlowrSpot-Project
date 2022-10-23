@@ -1,0 +1,21 @@
+.addCommentButton {
+  width: 200px;
+  height: 50px;
+}
+
+.addCommentButton button {
+  color: #df9186;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: white;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  cursor: pointer;
+}

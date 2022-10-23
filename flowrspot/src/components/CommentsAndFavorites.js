@@ -4,7 +4,7 @@ import "../Styles/CommentsAndFavorites.css";
 const CommentsAndFavorites = () => {
   return (
     <div className="comments-and-favorites">
-      <div className="comments">
+      <div className="numberOfComments">
         <i class="fa fa-commenting" />
         <p>18 comments</p>
       </div>
