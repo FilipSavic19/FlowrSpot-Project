@@ -5,7 +5,6 @@ import SightingDetailCard from "../components/SightingDetailCard";
 import Map from "../components/Map";
 import "../Styles/SightingDetail.css";
 import CommentsList from "../components/CommentsList";
-import PublishCommentButton from "../components/Buttons/PublishCommentButton";
 
 const SightingDetail = () => {
   return (
