@@ -9,6 +9,13 @@ const SightingList = () => {
       <CardSighting />
       <CardSighting />
       <CardSighting />
+      <CardSighting />
+      <CardSighting />
+      <CardSighting />
+      <CardSighting />
+      <CardSighting />
+      <CardSighting />
+      <CardSighting />
     </div>
   );
 };
